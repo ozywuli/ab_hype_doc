@@ -1,0 +1,37 @@
+---
+const {frontmatter} = Astro.props;
+---
+
+<style is:global>
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	p {
+		margin-bottom: 1rem;
+		max-width: 50rem;
+	}
+	figure {
+		margin: 1rem 0;
+	}
+	hr {
+		margin: 2rem 0;
+	}
+</style>
+<html>
+	<div class="bg-black min-h-screen font-mono text-white flex">
+		<aside class="relative h-screen inline-flex flex-col justify-between items-center border-r border-white basis-1/5 shrink-0 p-5">
+			<nav class="inline-flex flex-col space-y-2 gap-4">
+				<a href="#assessment-overview-page-view">Updated the Assessment Overview page to use the latest View pattern</a>
+				<a href="#xc-assessment-routes-workspace">Migrated all remaining Assessment routes into Workspace routes namespace</a>
+			</nav>
+		</aside>
+		<!-- <h1>{frontmatter.title}</h1>
+		<h2>Post author: {frontmatter.author}</h2>
+		<p>{frontmatter.description}</p> -->
+		<div class="max-h-screen overflow-auto p-5">
+			<h1 class="text-9xl mb-10 uppercase">Ozy's Hype Doc</h1>
+			<slot />
+		</div>
+	</div>
+</html>

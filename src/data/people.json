@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Jake Bixby",
+		"imgSrc": "/src/images/people/jake-bixby.jpeg"
+	},
+	{
+		"name": "Ryan Mark",
+		"imgSrc": "/src/images/people/ryan-mark.png"
+	},
+	{
+		"name": "Ricky Shi",
+		"imgSrc": "/src/images/people/ricky-shi.jpeg"
+	},
+	{
+		"name": "Charlina Hung",
+		"imgSrc": "/src/images/people/charlina-hung.jpeg"
+	},
+	{
+		"name": "Ian Williams",
+		"imgSrc": "/src/images/people/ian-williams.png"
+	}
+]

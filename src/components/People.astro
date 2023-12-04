@@ -1,0 +1,16 @@
+---
+import { Image } from 'astro:assets';
+import peopleData from '../data/people.json';
+
+
+const images = import.meta.glob('/src/images/people/*.{jpeg,jpg,png,gif}')
+---
+
+<ul class="flex gap-4 flex-wrap">
+	{peopleData.map(data => (
+		<li class="w-1/4">
+			{data.name}
+			<Image src={images[data.imgSrc]()} alt={data.name} />
+		</li>
+	))}
+</ul>

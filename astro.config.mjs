@@ -1,7 +1,11 @@
 import { defineConfig } from 'astro/config';
+import tailwind from "@astrojs/tailwind";
+
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://ozywuli.github.io',
+  site: 'https://ozywuli.github.io',
   base: '/ab_hype_doc',
+  integrations: [tailwind(), mdx()]
 });
